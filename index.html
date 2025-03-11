@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" data-theme="light">
+  <head>
     <title>Julien Da Silva - Go engineer</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FZCDFN9PLK"></script>
     <script>
@@ -23,42 +23,134 @@
     <meta property="og:image" content="https://pbs.twimg.com/profile_images/1255931533095043074/enTJULOv_400x400.jpg" />
     <meta property="og:description" content="Engineering currently @wearebanked; formerly @hailocab @onthedot @yoti #golang #DistributedSystems #Crypto #AI"></meta>
     <meta property="og:site_name" content="juliendsv"></meta>
-<style>
-body{
-  padding:0 0;
-  color:#333;
-  background-color:#f4f4f4;
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  line-height: 24px;
-}
-body .home{
-  padding:20% 0;
-  text-align:center
-}
-h1{
-  font-size:34pt;
-  font-weight:normal;
-}
-a{
-  color:#7069af;
-  background-color:inherit;
-  text-decoration:none
-}
-a:hover{
-  color:#4a4573;
-  background-color:inherit
-}
-</style>
-</head>
-<body>
-<div class="home">
-    <h1><abbr title="Julien Da Silva <hello@juliendasilva.com>">I</abbr> build distributed systems</a>.</h1>
-    <span>currently <a href="https://banked.com/">@banked</a> formerly <a href="https://onthedot.com/">@onthedot</a> <a href="https://hailocab.com/">@hailocab</a></span> 
-    <div style="width:100%;text-align:center">
-      <a href="http://twitter.com/juliendsv" target="_blank">@juliendsv</a> - 
-      <a href="https://github.com/juliendsv" target="_blank">Github</a> - 
-      <a href="http://uk.linkedin.com/in/juliendsv" target="_blank">Linkedin</a>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-base-200 flex items-center justify-center p-4">
+    <div class="max-w-md w-full space-y-6">
+      <!-- Main Heading -->
+      <h1 class="text-4xl font-medium font-serif text-center md:text-left">
+        distributed systems
+      </h1>
+      <h1 class="text-4xl font-medium font-serif text-center md:text-left" style="margin-top:0px">
+        crypto
+      </h1>
+      <h1 class="text-4xl font-medium font-serif text-center md:text-left space-y-0" style="margin-top:0px">
+        ai
+      </h1>
+
+
+
+      <!-- Experience Section -->
+      <div class="space-y-3">
+        
+        <div class="flex flex-col md:flex-row gap-1 md:gap-2">
+          <span class="font-medium font-serif">
+          <span class="font-medium font-serif">currently</span>
+          <a href="https://banked.com/" class="text-primary font-serif"
+            >@banked</a
+          >
+        </div>
+        <div class="flex flex-col md:flex-row gap-1 md:gap-2" style="margin-top:0px">
+          <span class="font-medium font-serif">formerly</span>
+          <div class="flex gap-2">
+            <a
+              href="https://www.citysprint.co.uk/courier-services/retail"
+              span
+              class="text-primary font-serif"
+              >@onthedot</a
+            >
+            <a href="https://www.free-now.com/" class="text-primary font-serif"
+              >@hailocab</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- HEEEEEEERRRRE -->
+      <!--  HEEEEEEEEEERRRRE -->
+
+      <div class="flex flex-col gap-4 max-w-xs">
+        <!-- X/Twitter -->
+        <a
+          class="btn justify-start normal-case bg-black text-white hover:bg-gray-800"
+          href="https://x.com/juliendsv"
+          target="_blank"
+        >
+          <div class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+            <div class="text-left">
+              <div class="font-bold">X.com / Twitter</div>
+              <div class="text-xs">My thoughts in short tweets</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/juliendsv"
+          target="_blank"
+          class="btn justify-start normal-case bg-[#333] text-white hover:bg-[#444]"
+        >
+          <div class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.977 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.606 9.606 0 0112 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.698 1.028 1.587 1.028 2.675 0 3.83-2.337 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48C19.137 20.107 22 16.373 22 11.969 22 6.463 17.522 2 12 2z"
+              />
+            </svg>
+            <div class="text-left">
+              <div class="font-bold">GitHub</div>
+              <div class="text-xs">My code repositories</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/juliendsv/"
+          target="_blank"
+          class="btn justify-start normal-case bg-[#0A66C2] text-white hover:bg-[#004182]"
+        >
+          <div class="flex items-center gap-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+            <div class="text-left">
+              <div class="font-bold">LinkedIn</div>
+              <div class="text-xs">Professional network</div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
