@@ -24,11 +24,21 @@ if (!fs.existsSync(stylesPath)) {
 // Read the input CSS file
 const css = fs.readFileSync(stylesPath, "utf8");
 
-// Process the CSS with Tailwind
+// Process the CSS with Tailwind and minification
 postcss([
   require("tailwindcss/nesting"),
   require("tailwindcss"),
   require("autoprefixer"),
+  require("cssnano")({
+    preset: [
+      "default",
+      {
+        discardComments: {
+          removeAll: true,
+        },
+      },
+    ],
+  }),
 ])
   .process(css, {
     from: stylesPath,
@@ -36,7 +46,7 @@ postcss([
   })
   .then((result) => {
     fs.writeFileSync(path.join(distDir, "styles.css"), result.css);
-    console.log("CSS built successfully!");
+    console.log("CSS built and minified successfully!");
   })
   .catch((error) => {
     console.error("Error processing CSS:", error);

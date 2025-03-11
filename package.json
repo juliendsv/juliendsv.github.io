@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node build.js",
     "watch": "nodemon build.js",
-    "serve": "http-server . -p 3000",
+    "serve": "http-server . -p 3000 --mimetypes mime.types",
     "dev": "concurrently \"npm run watch\" \"npm run serve\""
   },
   "keywords": [],
@@ -15,6 +15,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
+    "cssnano": "^6.0.3",
     "daisyui": "^5.0.0",
     "http-server": "^14.1.1",
     "nodemon": "^3.0.3",
