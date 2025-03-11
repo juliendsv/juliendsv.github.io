@@ -1,0 +1,27 @@
+{
+  "name": "juliendsv.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "nodemon build.js",
+    "serve": "http-server . -p 3000",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Personal website",
+  "devDependencies": {
+    "autoprefixer": "^10.4.17",
+    "concurrently": "^8.2.2",
+    "daisyui": "^5.0.0",
+    "http-server": "^14.1.1",
+    "nodemon": "^3.0.3",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "tailwindcss-cli": "^0.1.2"
+  }
+}
