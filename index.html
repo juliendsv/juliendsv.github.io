@@ -28,7 +28,18 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="dist/styles.css" rel="stylesheet" />
   </head>
-  <body class="min-h-screen bg-base-200 flex items-center justify-center p-4">
+  <body class="min-h-screen bg-base-200 p-4">
+    <!-- Logo -->
+    <div class="fixed top-4 left-4 z-50">
+      <a
+        href="https://juliendsv.com"
+        class="text-5xl font-serif font-bold text-base-content/30 hover:text-base-content/50 transition-colors duration-200"
+        aria-label="Home"
+      >
+        J
+      </a>
+    </div>
+
     <!-- Dark Mode Toggle -->
     <div class="fixed top-4 right-4 z-50">
       <button 
@@ -46,7 +57,7 @@
       </button>
     </div>
 
-    <div class="max-w-md w-full space-y-6" >
+    <div class="max-w-md w-full space-y-6 mx-auto flex flex-col items-center justify-center min-h-screen" >
       <!-- Main Heading -->
       <h1 class="text-4xl font-medium font-serif text-center md:text-left">
         distributed systems / crypto
