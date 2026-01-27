@@ -23,6 +23,7 @@
     "tailwindcss": "^3.4.1"
   },
   "dependencies": {
+    "lodash": "^4.17.23",
     "tailwindcss-cli": "^0.1.2"
   },
   "overrides": {
