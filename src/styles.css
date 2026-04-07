@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities; 
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light, dark;
+}
+
+/* Restore DaisyUI v4 button radius (v5 default is 0.25rem).
+   Uses html[data-theme] for higher specificity than DaisyUI's [data-theme] rule. */
+@layer base {
+  html[data-theme=light],
+  html[data-theme=dark] {
+    --radius-field: 0.5rem;
+  }
+}

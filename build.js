@@ -18,7 +18,7 @@ const stylesPath = path.join(srcDir, "styles.css");
 if (!fs.existsSync(stylesPath)) {
   fs.writeFileSync(
     stylesPath,
-    "@tailwind base;\n@tailwind components;\n@tailwind utilities;"
+    '@import "tailwindcss";\n@plugin "daisyui";\n'
   );
 }
 
@@ -66,9 +66,7 @@ const css = fs.readFileSync(stylesPath, "utf8");
 
 // Process the CSS with Tailwind and minification
 postcss([
-  require("tailwindcss/nesting"),
-  require("tailwindcss"),
-  require("autoprefixer"),
+  require("@tailwindcss/postcss"),
   require("cssnano")({
     preset: [
       "default",

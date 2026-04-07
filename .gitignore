@@ -1,3 +1,27 @@
+# Dependencies
 node_modules/
+
+# Build artifacts (committed intentionally for GitHub Pages)
+# dist/styles.css is kept tracked
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+npm-debug.log*
+*.log
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Claude
 CLAUDE.md
