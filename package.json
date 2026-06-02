@@ -26,6 +26,7 @@
     "@tailwindcss/postcss": "^4.2.2",
     "follow-redirects": "^1.16.0",
     "lodash": "^4.17.23",
+    "qs": "^6.15.2",
     "tailwindcss-cli": "^0.1.2"
   },
   "overrides": {
