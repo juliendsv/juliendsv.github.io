@@ -27,7 +27,8 @@
     "follow-redirects": "^1.16.0",
     "lodash": "^4.17.23",
     "qs": "^6.15.2",
-    "shell-quote": "^1.8.4",
+    "shell-quote": "^1.10.0",
+    "svgo": "^4.0.2",
     "tailwindcss-cli": "^0.1.2"
   },
   "overrides": {
