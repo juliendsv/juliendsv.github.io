@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node build.js",
-    "watch": "nodemon build.js",
+    "watch": "node --watch-path=src --watch-path=app --watch-path=index.html build.js",
     "serve": "http-server . -p 3000 --mimetypes mime.types -c-1",
     "dev": "concurrently \"npm run watch\" \"npm run serve\""
   },
@@ -15,10 +15,9 @@
   "devDependencies": {
     "autoprefixer": "^10.4.17",
     "concurrently": "^8.2.2",
-    "cssnano": "^6.0.3",
+    "cssnano": "^7.1.9",
     "daisyui": "^5.0.0",
     "http-server": "^14.1.1",
-    "nodemon": "^3.0.3",
     "postcss": "^8.4.35",
     "tailwindcss": "^4.2.2"
   },
@@ -27,9 +26,8 @@
     "follow-redirects": "^1.16.0",
     "lodash": "^4.17.23",
     "qs": "^6.15.2",
-    "shell-quote": "^1.10.0",
-    "svgo": "^4.0.2",
-    "tailwindcss-cli": "^0.1.2"
+    "shell-quote": "^1.12.0",
+    "svgo": "^4.0.2"
   },
   "overrides": {
     "tmp": "~0.2.4",
